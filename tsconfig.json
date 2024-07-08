@@ -1,0 +1,20 @@
+{
+  "include": [
+    "./main.ts"
+  ],
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": ["ES2022", "dom"],
+    "declaration": false,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@angular/*": ["node_modules/@angular/*"]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+body {
+  padding: 20px;
+  margin: 0px;
+  background-color: #3a3b40;
+  font-family: system-ui, sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+    article {
+      max-width: 700px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #54555a;
+    }
+
+      h1 {
+        margin: 0px 0px 10px 0px;
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin: 20px 0px;
+      }
