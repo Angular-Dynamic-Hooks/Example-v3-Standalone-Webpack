@@ -1,11 +1,7 @@
 import 'zone.js';
 import { HookParserEntry, parseHooks } from 'ngx-dynamic-hooks';
-import { ExampleComponent } from './src/components/example/example.component';
-import { greet } from './src/otherCode';
-
-export class TestService {
-  value = 'This is the test service';
-}
+import { ExampleComponent } from './components/example/example.component';
+import { greet } from './otherCode';
 
 const parsers: HookParserEntry[] = [
   ExampleComponent,

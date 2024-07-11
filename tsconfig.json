@@ -1,6 +1,6 @@
 {
   "include": [
-    "./main.ts"
+    "src/main.ts"
   ],
   "compilerOptions": {
     "target": "ES2022",

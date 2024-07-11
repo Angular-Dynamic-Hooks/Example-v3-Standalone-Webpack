@@ -10,7 +10,7 @@ const mode = isProduction ? 'production' : 'development';
 export default {
   mode: mode,
   entry: {
-    main: './main.ts',
+    main: './src/main.ts',
     styles: './styles/styles.scss',
   },
   output: {

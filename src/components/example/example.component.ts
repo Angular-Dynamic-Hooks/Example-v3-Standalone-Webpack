@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   standalone: true
 })
 export class ExampleComponent{
-  @Input() name: string|null = 'ExampleComponent';
+  @Input() message: string|null = '🚀 Hello from ExampleComponent!';
 
   constructor () {
   }
