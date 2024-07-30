@@ -1,0 +1,25 @@
+.widget-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 15px 0px 0px 0px;
+    padding: 10px;
+    color: white;
+    background-color: #1f8968;
+    border-radius: 5px;
+
+    h3 {
+        margin: 0px 0px 10px 0px;
+        font-size: 16px;
+    }
+
+    p {
+        margin: 0px 0px 10px 0px;
+    }
+
+    img {
+        width: 100%;
+    }
+}

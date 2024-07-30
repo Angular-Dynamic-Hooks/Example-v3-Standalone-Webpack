@@ -1,0 +1,23 @@
+.notice-component {
+    display: flex;
+    align-items: stretch;
+    color: white;
+    background-color: #3c7faf;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+    .notice-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        background-color: #0000002b;        
+        font-size: 16px;
+    }
+
+    .notice-content {
+        width: calc(100% - 30px);
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }

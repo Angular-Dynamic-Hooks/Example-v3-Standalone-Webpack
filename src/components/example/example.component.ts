@@ -7,9 +7,5 @@ import { Component, Input } from '@angular/core';
   standalone: true
 })
 export class ExampleComponent{
-  @Input() message: string|null = '🚀 Hello from ExampleComponent!';
-
-  constructor () {
-  }
-
+  @Input() customMessage: string|null = '🚀 Hello from ExampleComponent!';
 }
