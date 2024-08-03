@@ -28,7 +28,6 @@
     "serve": "^14.2.3",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
     "webpack-remove-empty-scripts": "^1.0.4",
     "zone.js": "^0.14.7"
   }

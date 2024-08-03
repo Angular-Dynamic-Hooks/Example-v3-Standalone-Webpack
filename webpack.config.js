@@ -83,12 +83,5 @@ export default {
     new MiniCssExtractPlugin({
       filename: isProduction ? "[name].[contenthash].css" : '[name].css'
     })
-  ],
-  devServer: {
-    static: {
-      directory: './www'
-    },
-    compress: true,
-    port: 9000
-  }
+  ]
 };
