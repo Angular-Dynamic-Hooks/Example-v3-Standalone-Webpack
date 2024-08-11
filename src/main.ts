@@ -25,7 +25,7 @@ parseHooks(document.body, parsers);
 const scope = createProviders([CounterService]);
 scope.parseHooks(document.body, [CounterWriteComponent, CounterReadComponent]);
 
-// Optional: Automatically parse again when new element are added anywhere
+// Optional: Automatically parse again when new elements are added
 observeElement(document.body, parentElement => {
   parseHooks(parentElement, parsers);
   scope.parseHooks(parentElement, [CounterWriteComponent, CounterReadComponent]);
