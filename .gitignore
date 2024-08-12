@@ -24,7 +24,6 @@
 .history/*
 
 # Miscellaneous
-package-lock.json
 /connect.lock
 /coverage
 /libpeerconnection.log
