@@ -1,6 +1,6 @@
 import 'zone.js';
 import '@angular/localize/init';
-import { parseHooks, createProviders, HookParserEntry, observeElement } from 'ngx-dynamic-hooks';
+import { parse, createProviders, HookParserEntry, observeElement } from 'ngx-dynamic-hooks';
 import { ExampleComponent } from './components/example/example.component';
 import { CounterService } from './services/counterService';
 import { CounterWriteComponent } from './components/counterWrite/counterWrite.component';
@@ -12,21 +12,21 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 // No need to load Angular traditionally like this:
 // bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
 
-// Load components directly into existing HTML via parseHooks() instead
+// Load components directly into existing HTML via parse() instead
 const parsers: HookParserEntry[] = [
   ExampleComponent,                                       // For example 1
   { component: WidgetComponent, selector: '.myWidget'},   // For example 2
   NoticeComponent,                                        // For example 3
   CarouselComponent                                       // For example 5
 ];
-parseHooks(document.body, parsers);
+parse(document.body, parsers);
 
 // For example 4
 const scope = createProviders([CounterService]);
-scope.parseHooks(document.body, [CounterWriteComponent, CounterReadComponent]);
+scope.parse(document.body, [CounterWriteComponent, CounterReadComponent]);
 
 // Optional: Automatically parse again when new elements are added
 observeElement(document.body, parentElement => {
-  parseHooks(parentElement, parsers);
-  scope.parseHooks(parentElement, [CounterWriteComponent, CounterReadComponent]);
+  parse(parentElement, parsers);
+  scope.parse(parentElement, [CounterWriteComponent, CounterReadComponent]);
 });
